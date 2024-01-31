@@ -1,0 +1,568 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    background-color: black;
+}
+.main-website{
+    height: 120vh;
+    width: 100%;
+}
+.nav-bar{
+    height: 25vh;
+    width: 100%;
+    margin-bottom: 2%;
+    display: flex;
+    flex-direction: column;
+}
+.first-nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30%;
+    width: 100%;
+    background-color:rgba(128, 128, 128, 0.250);
+}
+.first-nav h3{
+    color: red;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.2em;
+}
+.second-nav{
+    display: flex;
+    align-items: center;
+    height: 40%;
+    width: 100%;
+}
+.second-nav-part-1{
+    display: flex;
+    width: 70%;
+    margin-left: 2rem;
+   
+}
+.second-nav-part-1 h1{
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2.5rem;
+}
+.second-nav-part-2{
+    height: 100%;
+    width: 30%;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+.membership{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 3.2em;
+    width: 8em;
+    font-size: 0.95rem;
+    padding-left: 4px;
+    background-color: orangered;
+    border-radius: 0.6rem;
+}
+.get h4{
+    font-size: 1em;
+    font-weight:400;
+}
+.mentorship h4{
+    font-size: 1em;
+}
+.signout{
+    height: 3em;
+    width: 6em;
+    background-color: rgba(255, 68, 0, 0.361);
+    border: 2px solid rgba(255, 68, 0, 0.534);
+    border-radius: 0.7rem;
+    display: flex;
+    font-size: 1 em;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: orangered;
+}
+.membership h4{
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.third-nav{
+    height: 30%;
+    background-color:rgba(128, 128, 128, 0.250);
+    width: 100%;
+    text-align: center;
+}
+.third-nav ul{
+    padding-top: 0.8rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+.third-nav ul li{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.third-nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+.signout, .membership :hover{
+    cursor: pointer;
+}
+.third-nav ul li{
+    color: white;
+    font-weight: 600;
+}
+.third-nav ul li:hover{
+    cursor: pointer;
+}
+.dsa-sheet-sub-menu ul {
+    display: none;
+    flex-direction: column;
+    padding: 2%;
+    background-color:rgba(128, 128, 128, 0.250);
+}
+.dsa-sheet-sub-menu{
+    z-index: 999;
+}
+.dsa-sheet-sub-menu ul li{
+    width: 100%;
+    padding-bottom: 1.5rem;
+    font-size: 1rem;
+}
+.first-hover:hover .dsa-sheet-sub-menu ul{
+    display: block;
+    position: absolute;
+}
+.dsa-sheet-sub-menu ul li a{
+    padding: 1rem;
+}
+.dsa-sheet-sub-menu ul li a:hover{
+    background-color:rgba(128, 128, 128, 0.250);
+}
+.dsa-playlist-sub-menu ul {
+    display: none;
+    flex-direction: column;
+    padding: 2%;
+    background-color:rgba(128, 128, 128, 0.250);
+}
+.dsa-playlist-sub-menu ul li{
+    width: 100%;
+    padding-bottom: 1.5rem;
+    font-size: 1rem;
+}
+.second-hover:hover .dsa-playlist-sub-menu ul{
+    display: block;
+    position: absolute;
+}
+.dsa-playlist-sub-menu ul li a{
+    padding: 1rem;
+}
+.dsa-playlist-sub-menu ul li a:hover{
+    background-color:rgba(128, 128, 128, 0.66);
+}
+.cs-subject-sub-menu ul {
+    display: none;
+    flex-direction: column;
+    padding: 2%;
+    background-color:rgba(128, 128, 128, 0.250);
+}
+.cs-subject-sub-menu ul li{
+    width: 100%;
+    padding-bottom: 1.5rem;
+    font-size: 1rem;
+}
+.third-hover:hover .cs-subject-sub-menu ul{
+    display: block;
+    position: absolute;
+}
+.cs-subject-sub-menu ul li a{
+    padding: 1rem;
+}
+.cs-subject-sub-menu ul li a:hover{
+    background-color:rgba(128, 128, 128, 0.66);
+}
+.interview-sub-menu ul {
+    display: none;
+    flex-direction: column;
+    padding: 2%;
+    background-color:rgba(128, 128, 128, 0.250);
+}
+.interview-sub-menu ul li{
+    width: 100%;
+    padding-bottom: 1.5rem;
+    font-size: 1rem;
+}
+.fourth-hover:hover .interview-sub-menu ul{
+    display: block;
+    position: absolute;
+}
+.interview-sub-menu ul li a{
+    padding: 1rem;
+}
+.interview-sub-menu ul li a:hover{
+    background-color:rgba(128, 128, 128, 0.66);
+}
+.search-heading{
+    height: 30vh;
+    width: 100%;
+    display: flex;
+}
+.heading-div{
+    width: 70%;
+    padding-left: 3%;
+    font-size: 1.2em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+   
+}
+.search-div{
+    width: 30%;
+}
+.search-name{
+    color: white;
+    display: flex;
+    align-items: flex-end;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 30%;
+}
+.search-name h3{
+    font-weight: 400;
+}
+.search-elements{
+    width: 80%;
+    display: flex;
+    gap: 5%;
+    height: 70%;
+}
+.search-bar{
+    height: 100%;
+    width: 70%;
+}
+.search-input{
+   width: 100%;
+   background-color: rgba(239, 227, 227, 0.155);
+   border: 1px solid white;
+   height: 40%;
+}
+.search-button{
+    height: 39%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 40%;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: white;
+   
+}
+.sde-overview h2{
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.5em;
+}
+.sde-utube{
+    width: 100%;
+}
+.sde-overview{
+    display: flex;
+    margin-left: 2%;
+    padding-left: 1%;
+    padding-right: 1%;
+    width: 65%;
+    height: 10vh;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(128, 128, 128, 0.250);
+}
+.note-content{
+    width: 65%;
+    margin-left: 3%;
+    margin-top: 2%;
+}
+.note-content p{
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.1em;
+    font-weight: 400;
+}
+.total-complete{
+    width: 65%;
+    background-color: rgba(128, 128, 128, 0.250);
+    display: flex;
+    align-items: center;
+    height: 10vh;
+    /* border: 1px solid white; */
+    margin-left: 2%;
+    margin-top: 4%;
+}
+.inner-complete{
+    width: 60%;
+    display: flex;
+    height: 50%;
+    margin-left: 4%;
+    /* border: 1px solid white ; */
+    background-color: black;
+}
+.orange{
+    height: 100%;
+    width: 20%;
+    background-color: orangered;
+}
+.total-complete h3{
+    color: white;
+    margin-left: 6%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.black h3{
+    color: white;
+}
+.black{
+    width: 70%;
+    text-align: center;
+}
+.day1{
+    margin-top: 2%;
+    background-color: rgba(128, 128, 128, 0.250);
+    display: flex;
+    align-items: center;
+    margin-left: 2%;
+    background-color: rgba(255, 166, 0, 0.15);
+    width: 65%;
+    height: 10vh;
+}
+.day1:hover{
+    cursor: pointer;
+    border: 1px solid rgba(255, 166, 0, 0.319);
+    background-color: black;
+}
+.day1-topic h2{
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.3em;
+}
+.day1-topic{
+    width: 60%;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding-left: 2%;
+}
+.inner-and-plus{
+    width: 80%;
+    height: 100%;
+    padding-right: 3%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.inner-topic{
+    height: 50%;
+    display: flex;
+    width: 40%;
+    margin-right: 2%;
+    border: 1px solid white;
+}
+.orange-day{
+    width: 30%;
+    height: 100%;
+    background-color: orangered;
+}
+.black-day{
+    width: 75%;
+    height: 100%;
+}
+.black-day h2{
+    color: white;
+    font-size: 1.1em;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.frequently-asked-questions{
+    color: white;
+    margin: 2%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.question{
+    margin-top: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 10vh;
+    width: 65%;
+    background-color:  rgba(128, 128, 128, 0.250);
+}
+.question {
+    padding-left: 2%;
+}
+#down-arrow{
+    padding-right: 2%;
+}
+.hurr{
+    margin-left: 2%;
+}
+.hurray h4{
+    color: white;
+    font-size: 1.2em;
+    font-weight: lighter;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.hurray{
+    margin-left: 2%;
+}
+.share h3{
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: underline;
+    text-decoration-color: aqua;
+}
+.share h3:hover{
+    cursor: pointer;
+    text-decoration-color:transparent;
+}
+.share{
+    margin-top: 2%;
+    margin-bottom: 5%;
+    height: 20vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.share-button{
+    height: 10vh;
+    border: none;
+    text-decoration: underline;
+    color: white;
+    background-color: orangered;
+    margin-bottom: 2%;
+    font-size: 1.2em;
+    width: 20%;
+}
+.share-button:hover{
+    cursor: pointer;
+}
+.posts{
+    margin-left: 2%;
+    display: flex;
+    justify-content: space-around;
+}
+.previous-post p{
+    color: white;
+}
+.previous-post h3{
+    color: white;
+}
+.next-post p{
+    color: white;
+    text-align: right;
+}
+.next-post h3{
+    color: white;
+}
+.next-post:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    text-decoration-color:white ;
+}
+.previous-post:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    text-decoration-color:white ;
+}
+.comments button{
+    height: 50%;
+    width: 15%;
+    color: white;
+    font-size: 1em;
+    border: none;
+    background-color: rgb(5, 184, 255);
+}
+.comments{
+    width: 100%;
+    display: flex;
+    margin-top: 2%;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+}
+.ending-div{
+    height: 40vh;
+    margin: 2%;
+    display: flex;
+    width: 95%;
+    border-top: 1px solid white;
+    background-color:  rgba(128, 128, 128, 0.250);
+}
+.left-div{
+    width: 40%;
+    margin-right: 15%;
+}
+.right-div{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 3%;
+}
+.logo-name{
+    margin: 2%;
+    display: flex;
+    color: white;
+    width: 60%;
+    height: 10vh;
+}
+img{
+    height: 50px;
+    width: 50px;
+    margin: 2%;
+}
+.matter p{
+    color: white;
+    font-size: 0.9em;
+}
+.matter{
+    margin-left: 2%;
+}
+.follow-us{
+    margin-top: 5%;
+    color: white;
+    margin-left:2%;  
+}
+.logos ul{
+    display: flex;
+}
+.logos ul li{
+    list-style: none;
+    padding: 2%;
+}
+.dsa-playlist h3{
+    text-decoration: underline;
+    text-decoration-color: white;
+    color: white;
+}
+.dsa-playlist p{
+    color: white;
+}
+.dsa-playlist  ul li {
+    list-style: none;
+    color: white;
+    margin-bottom: 2%;
+}
+.copyright{
+    width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 2%;
+    margin-right:2%;
+    height: 8vh;
+    font-weight: 600;
+    color:orangered;
+    background-color: antiquewhite;
+}
